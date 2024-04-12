@@ -295,7 +295,7 @@ void OpenTaskListDockableDlg()
 
 		// define the default docking behaviour
 		data.uMask = DWS_DF_CONT_RIGHT;
-
+		data.hIconTab = (HICON)::LoadImage(_hInst, MAKEINTRESOURCE(IDI_EXPLORE), IMAGE_ICON, 0, 0, LR_LOADMAP3DCOLORS | LR_LOADTRANSPARENT);
 		data.pszModuleName = _taskList.getPluginFileName();
 
 		// the dlgDlg should be the index of funcItem where the current function pointer is
